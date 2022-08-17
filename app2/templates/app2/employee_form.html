@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+  {{ form }}
+  {% if object.id %}
+    <button type="submit" class="btn btn-primary">Update_Employee</button>
+  {% else %}
+    <button type="submit" class="btn btn-primary">Create_Employee</button>
+  {% endif %}
+  </form>
+
+{% endblock %}

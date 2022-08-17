@@ -1,0 +1,284 @@
+<!-- # HTML --- Hypertext Markup Language
+        #    standard markup language for creating webpages.
+
+# describes structure of a web pages
+# consists of a series of elements
+# elements tell browser how to display the contents -->
+
+<html lang="en">   
+<!-- for specified language as English -->
+    <head>
+        <title>Welcome Page</title>
+        <style>p {color:crimson}</style>
+    </head>
+
+<body style="background-color:rgb(184, 230, 176);">
+
+
+    <!-- HTML headings are defined with the <h1> to <h6> tags -->
+
+    <h1 style="font-size:20px;">Heading 1</h1>
+<!-- HTML heading has a default size,can specify the size for any heading with the style attribute -->
+
+    <h2 style="background-color:rgb(71, 148, 255);">Heading 2</h2>
+<!-- using style attribute set background color for paragraph -->
+
+    <h1 style="color:red;">RED Header</h1>
+<!-- using style attribute set text color -->
+
+<h3 style="font-family:courier;">Font Family Header1</h3>
+<h3 style="font-family:verdana;">Font Family Header2</h3>
+
+<h1 style ="font-size:200%">Font Size Header</h1>
+
+<h1 style="text-align:center;">Center Header</h1>
+<!-- alignment == center, left, right -->
+
+    <!-- <h1>Aditi Raj Bhonde</h1> -->
+    <!-- <h2>Aditi Raj Bhonde</h2> -->
+    <!-- <h3>Aditi Raj Bhonde</h3> -->
+    <!-- <h4>Aditi Raj Bhonde</h4> -->
+    <!-- <h5>Aditi Raj Bhonde</h5> -->
+    <!-- <h6>Aditi Raj Bhonde</h6> -->
+
+    <p>Paragraph</p>
+<hr> 
+<!-- Horizontal Line - hr -->
+    <a href="https://www.google.com">This is a Link</a>
+    <!-- <a> tag defines a hyperlink. The href attribute specifies the URL    -->
+<!-- # D:\Programs\B7_Django\LibraryProj\app2\templates\home.html ---Absolute url -->
+<!-- # templates\home.html -- Relative url -->
+
+    <p style="background-color:aqua;"><b><i>Raj Ashok Bhonde <br>Aditi Raj Bhonde</i></b></p>
+<!-- <br> tag defines a line break -->
+<!-- using style attribute set background color for paragraph -->
+<!-- b == bold, i == italic,  -->
+    <p style="color:red;">This is Red paragraph.</p>
+<!-- style attribute is used to add styles to an element, such as color, font, size, and more -->
+
+    <p title="I am a tooltip.">This is a Tooltip.</p>
+<!-- title attribute defines extra information about element -->
+
+    <img src="D:\Programs\B7_Django\1.jpg" alt="Cute Couples">
+<!-- alt attribute for the <img> tag specifies an alternate text for an image -->
+
+
+<p>Latest India News, Breaking News, Today Headlines and Live News Online</p>
+<hr> 
+<p>Indian Express provides the latest news from India and around the world.</p>
+
+<!-- <p> element defines a paragraph -->
+<!-- <hr> element is used to separate content -->
+
+<strong>Important Message</strong>
+<!-- <strong> element defines text with strong importance. The content inside is typically displayed in bold. -->
+
+<pre>
+    Twinkle, twinkle, little star,.
+ 
+    How I wonder what you are!
+ 
+    Up above the world so high,.
+    
+    Like a diamond in the sky..
+ </pre>
+
+ <p>Hello<sub> EveryOne</sub> Good <sup>Evening</sup></p>
+ <!-- <sub> element defines subscript text, <sup> element defines superscript text -->
+
+<em>Emphasized Paragraph.</em>
+ <!-- HTML <em> element defines emphasized text. The content inside is typically displayed in italic. -->
+
+<small>Small Text.</small>
+<!-- <small> element defines smaller text -->
+
+<p><mark>HyperText Markup Language</mark></p>
+<!-- <mark> element defines text that should be marked or highlighted -->
+
+<p>I Live in <del>Amravati</del> <ins>Pune.</ins></p>
+<!-- <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text -->
+    <!-- <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text -->
+
+<blockquote abc="first.html">The HTML <blockquote> element defines a section that is quoted from another source.
+HTML attributes provide additional information about HTML elements.attributes are always specified in the start tag
+attributes usually come in name/value pairs like name="value"
+</blockquote>
+
+
+<p>Address:<q>Wakad</q></p>
+<!-- <q> tag defines a short quotation. -->
+
+<cite><abbr title="Object Oriented Language">Python</abbr></cite>
+<!-- Marking abbreviations can give useful information to browsers -->
+<!-- cite == italic -->
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+<!-- <bdo> tag is used to override the current text direction === reverse  -->
+
+
+    <p style="border:2px solid black;">Hello EveryOne</p>
+
+
+<table border = "1 px" style="width:50%">
+    <!-- To set the width of a table, add the style attribute to the <table> element -->
+
+    <caption>Employee Details</caption>
+    <!-- You can add a caption that serves as a heading for the entire table.     -->
+
+    <head>
+        <style>
+        th, td {
+          border-style: solid;
+          border-color: red;
+          text-align: center;
+
+          padding-top: 10px;
+          padding-bottom: 20px;
+          padding-left: 30px;
+          padding-right: 40px;
+
+
+        }
+
+        th:nth-child(odd),th:nth-child(even) {background-color:whitesmoke;}
+        tr:nth-child(even) {background-color: yellow;}
+        </style>
+        </head>
+    <tr>
+        <th style="width:20%">Emp Name</th>
+        <!-- Set the width of the first column to 20% -->
+        <th>Address</th>
+        <th>Salary</th>
+    </tr>
+    <tr style="height:50px">
+        <!-- Set the height of the second row to 50 pixels -->
+        <td>Raj</td>
+        <td>Akurdi</td>
+        <td>75000</td>
+    </tr>
+    <tr>
+        <td>Mayuri</td>
+        <td>Thergaon</td>
+        <td>30000</td>
+    </tr>
+
+</table>
+
+
+<!-- Unordered List  An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. -->
+<ul>
+    <li>Pune</li>
+    <li>Mumbai</li>
+    <li>Amravati</li>
+  </ul>
+
+
+  <!-- Ordered List    An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. -->
+
+<ol>
+    <li>Rasika</li>
+    <li>Raj</li>
+</ol>
+
+
+<!-- Description List A description list is a list of terms, with a description of each term. -->
+<!--    <dl> tag defines the description list
+        <dt> tag defines the term (name)
+        <dd> tag describes each term -->
+
+<dl>
+    <dt>Name</dt>
+    <dd>- Rasika Raj Bhonde</dd>
+    <dt>Address</dt>
+    <dd>- Akurdi</dd>
+  </dl>
+
+
+<head>
+    <style>
+        .city{background-color: tomato; color: black; margin: 20px; padding:20px;}
+    </style>
+</head>
+
+
+<div class="city" st>
+    <h2>London</h2>
+    <p><b>London is a capital of England</b></p>
+</div>
+
+<div class="city" st>
+    <h2>Paris</h2>
+    <p><b>Paris is capital of France.</b></p>
+</div>
+
+<!-- HTML <form> element is used to create an HTML form -->
+<form>
+    <h1>HTML Form</h1>
+    <lable>First Name : </lable><br>
+    <input type="text" value="Aditi"><br>
+    <lable>Last Name : </lable><br>
+    <input type="text" value="Bhonde"><br>
+    <input type="Submit" value="Submit">
+
+</form>
+
+</body>
+</html>  
+
+
+<!-- <pre> element defines preformatted text  displayed in a fixed-width font, and it preserves both spaces and line break -->
+
+
+<!-- HTML elements
+The html element is everything from the start tag to the end tag
+<tagname>Content</tagname>
+example   <h1> My First Heading </h1> -->
+
+
+<!-- HTML attributes
+HTML attributes provide additional information about HTML elements
+
+All HTML ele can have attributes
+attributes provide additional information about elements
+attributes are always specified in the start tag
+attributes usually come in name/value pairs like name="value"
+
+example - <a href="https://www.google.com">This is a Link</a> -->
+
+<!-- b and strong display in bold -->
+<!-- em and i and cite display in italic -->
+<!-- tooltip and abbr approx same -->
+
+
+<!-- <table></table> ========== to define table -->
+<!-- <th> =========== Header  -->
+<!-- <tr> =========== Row  -->
+<!-- <td> =========== Cell  -->
+<!-- <th> =========== header  -->
+<!-- th, td {border-style: solid;} dotted/dashed/solid/double/groove/ridge/inset/outset  -->
+
+<!-- Cell padding is the space between the cell edges and the cell content.
+By default the padding is set to 0.
+padding-top, padding-bottom, padding-left, and padding-right -->
+
+
+
+<!-- CSS === Cascading Style Sheet, can control the layout of multiple web pages  -->
+<!-- Inline =====  by using the style attribute inside HTML elements, 
+     Internal ==== by using a <style> element in the <head> section, 
+     External ==== by using a <link> element to link to an external CSS file  -->
+
+
+<!-- Form  -->
+<!-- <form> ===== element is used to create an HTML form -->
+    
+<!-- Input element 
+    <input type="text">	Displays a single-line text input field
+    <input type="radio">	Displays a radio button
+    <input type="checkbox">	Displays a checkbox 
+    <input type="submit">	Displays a submit button
+    <input type="button">	Displays a clickable button -->
+
+<!-- Lable Element ===== <label> tag defines a label for many form elements -->
+
+

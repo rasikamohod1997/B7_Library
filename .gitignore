@@ -1,0 +1,5 @@
+LibraryProj/__pycache__/
+app2/__pycache__/
+app2/management/commands/__pycache__/
+app2/migrations/__pycache__/
+app2/views/__pycache__/
